@@ -1,57 +1,8 @@
 <section class="adventure-home" aria-labelledby="home-title">
-  <div class="adventure-hero">
-    <div class="hero-copy">
-      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> YOUR ADVENTURE STARTS HERE</p>
-      <% if (typeof currentUser !== 'undefined' && currentUser) { %>
-        <h1 id="home-title">Ready for your next quest, <%= currentUser.display_name || 'Trainer' %>?</h1>
-        <p class="hero-description">Your journey is waiting. Check your trainer hub, meet up with your crew, and see where the next path leads.</p>
-        <a class="button button-primary" href="/account">Open trainer hub <span aria-hidden="true">→</span></a>
-      <% } else { %>
-        <h1 id="home-title">Welcome, Trainer! A whole new adventure is waiting.</h1>
-        <p class="hero-description">Step into a bright, friendly world built for curious trainers. Sign in to pick up your journey and find your place in the party.</p>
-        <a class="button button-primary" href="/auth/login">Start your adventure <span aria-hidden="true">→</span></a>
-      <% } %>
-      <p class="hero-footnote"><span aria-hidden="true">✦</span> Pack your courage. The rest is an adventure.</p>
+    <div id="left-panel" class="left-panel">Left Panel</div>
+    <div id="map" class="map">
+      <img src="img/images.jpg" id="map-img" class="map-img">
+      <img src="img/map1024_1.png" id="map-overlay" class="map-overlay">
     </div>
-
-    <div class="hero-art" aria-hidden="true">
-      <div class="sunburst"></div>
-      <div class="orbit orbit-one"></div>
-      <div class="orbit orbit-two"></div>
-      <div class="adventure-orb"><span></span></div>
-      <div class="art-label art-label-top">NEW ROUTE</div>
-      <div class="art-label art-label-bottom">LET'S GO!</div>
-      <span class="sparkle sparkle-one">✦</span>
-      <span class="sparkle sparkle-two">✧</span>
-    </div>
-  </div>
-
-  <div class="home-section-heading">
-    <div>
-      <p class="eyebrow">THE TRAINER'S CHECKLIST</p>
-      <h2>Every great journey begins somewhere.</h2>
-    </div>
-    <span class="route-stamp" aria-hidden="true">ROUTE<br />01</span>
-  </div>
-
-  <div class="journey-grid">
-    <article class="journey-card journey-card-red">
-      <span class="card-number">01</span>
-      <span class="card-icon" aria-hidden="true">✦</span>
-      <h3>Choose your path</h3>
-      <p>Sign in and get your adventure underway. Your next chapter is yours to write.</p>
-    </article>
-    <article class="journey-card journey-card-yellow">
-      <span class="card-number">02</span>
-      <span class="card-icon" aria-hidden="true">◎</span>
-      <h3>Find your people</h3>
-      <p>Bring your friends along and make the little moments part of the story.</p>
-    </article>
-    <article class="journey-card journey-card-blue">
-      <span class="card-number">03</span>
-      <span class="card-icon" aria-hidden="true">➜</span>
-      <h3>Keep exploring</h3>
-      <p>There is always another trail to follow and something new around the bend.</p>
-    </article>
-  </div>
+    <div id="right-panel" class="right-panel">Right Panel</div>
 </section>
